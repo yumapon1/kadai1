@@ -12,7 +12,8 @@ header {
 main {
   width: 960px;
   margin: 50px auto;
-  display: flex;
+ display: flex;
+ justify-content: center;
 }
 
 .box{
@@ -23,15 +24,13 @@ main {
   background-color:#eeeeee;
 }
 
-.box:last-child{
-  margin-right:0;
-}
 
 .box-image1{
   height:150px;
   background-image:url(img/flow01.png);
   background-position:bottom;
   background-size:cover;
+  background-position: center;
 }
 
 .box-image2{
@@ -39,6 +38,7 @@ main {
   background-image:url(img/flow02.png);
   background-position:bottom;
   background-size:cover;
+  background-position: center;
 }
 
 .box-image3{
@@ -46,6 +46,7 @@ main {
   background-image:url(img/flow03.png);
   background-position:bottom;
   background-size:cover;
+  background-position: center;
 }
 
 .step {
@@ -64,5 +65,41 @@ margin-bottom: 5px;
 footer{
   height: 50px;
   background-color: #AAA
+}
 
+@media screen and (max-width:768px){
+  header{
+    height:50px;
+    margin-bottom: 50px;
+  }
+
+  main{
+    display:block;
+    width:100%;
+    margin:0 auto;
+
+  }
+
+  .box{
+    width:90%;
+    margin:  0 auto;
+    margin-bottom: 20px;
+  }
+
+  .box-image1{
+    height:150px;
+  }
+
+   .box-image2{
+    height:150px;
+  }
+
+   .box-image3{
+    height:150px;
+  }
+
+  footer{
+    height:50px;
+    margin-top: 50px;
+  }
 }
